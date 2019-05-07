@@ -2,7 +2,7 @@
   "name": "temperature",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://github.com/SusanneLun/Sunshine-or-rain",
+  "homepage": "https://github.com/SusanneLun/temperature",
   "dependencies": {
     "gh-pages": "^2.0.1",
     "react": "^16.8.6",
