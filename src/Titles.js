@@ -7,7 +7,7 @@ class Titles extends Component {
     return (
       <div>
         <h1>Weather Finder</h1>
-        <p>Find out termperature and weather conditions</p>
+        <p>Find out temperature and weather conditions</p>
       </div>
     )
   }
