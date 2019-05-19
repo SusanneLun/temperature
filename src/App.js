@@ -3,6 +3,9 @@ import './App.css';
 import Titles from "./Titles"
 import Form from "./Form"
 import Weather from "./Weather"
+import Navbar from "./Navbar"
+import { Route, Switch } from 'react-router-dom'
+import Home from "./Home"
 
 const API_KEY = "5c95c4fb3811e6af0f71b2a15dcd6333";
 
@@ -52,8 +55,10 @@ class App extends Component {
 render() {
   return (
     <div>
+
       <div className="wrapper">
         <div className="main">
+        <Navbar className="navbar"/>
           <div className="container">
             <div className="row">
               <div className="col-xs-5 title-container">
@@ -72,14 +77,13 @@ render() {
             </div>
           </div>
         </div>
-      </div>
+        </div>
     </div>
     </div>
-  );
+
+
+)
 }
 }
-
-
-
 
 export default App;
