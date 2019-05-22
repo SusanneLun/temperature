@@ -29,14 +29,14 @@ import { NavLink } from 'react-router-dom';
         }}
       >Home</NavLink>
       <NavLink
-      to="/forecast"
+      to="/myarea"
       exact
       style={link}
       activeStyle={{
         background: 'blue'
       }}>My Area</NavLink>
       <NavLink
-        to="/reserved"
+        to="/forecast"
         exact
         style={link}
         activeStyle={{

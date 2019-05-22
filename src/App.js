@@ -6,6 +6,8 @@ import Weather from "./Weather"
 import Navbar from "./Navbar"
 import { Route, Switch } from 'react-router-dom'
 import Home from "./Home"
+import Myarea from "./Myarea"
+import Forecast from "./Forecast"
 
 const API_KEY = "5c95c4fb3811e6af0f71b2a15dcd6333";
 
@@ -59,6 +61,14 @@ render() {
       <div className="wrapper">
         <div className="main">
         <Navbar className="navbar"/>
+        <Switch>
+        <Route path="/" component={routerProps =>
+        <Home {...routerProps} /> } />
+        <Route exact path="/myarea" component={routerProps =>
+        <Myarea {...routerProps} />} />
+        <Route exact path="/forecast" component={routerProps =>
+        <Forecast {...routerProps} />} />
+        </Switch>
           <div className="container">
             <div className="row">
               <div className="col-xs-5 title-container">
