@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
-import './App.css';
+
 import Navbar from "./Navbar"
-import { Route, Switch } from 'react-router-dom'
-import Home from "./Home"
-import Myarea from "./Myarea"
-import Forecast from "./Forecast"
+import { BrowserRouter as Router, Route, withRouter } from 'react-router-dom'
+import Home from './Home'
+import Myarea from './Myarea'
+import Forecast from './Forecast'
+import index from './index'
 
 
 
@@ -14,18 +15,18 @@ class App extends Component {
 render() {
   return (
     <div>
-
+      <div>
         <Navbar className="navbar"/>
-        <Switch>
-        <Route path="/" component={routerProps =>
-        <Home {...routerProps} /> } />
-        <Route exact path="/myarea" component={routerProps =>
-        <Myarea {...routerProps} />} />
-        <Route exact path="/forecast" component={routerProps =>
-        <Forecast {...routerProps} />} />
-        </Switch>
+        <Router>
+        <div>
+        <Route path="/" component={Home} />
+        <Route exact path="/myarea" component={Myarea} />
+        <Route exact path="/forecast" component={Forecast} />
+        </div>
+        </Router>
+        </div>
       </div>
-  
+
 
 
 
@@ -33,4 +34,4 @@ render() {
 }
 }
 
-export default App;
+export default withRouter (App);

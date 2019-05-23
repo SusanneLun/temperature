@@ -74,8 +74,8 @@ getWeather =  async (e) => {
       </div>
       </div>
       </div>
-      </div>
-    
+    </div>
+
     )
   }
 }

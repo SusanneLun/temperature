@@ -1,6 +1,7 @@
 import React, { Component } from "react"
 
 
+
 const API_KEY = "5c95c4fb3811e6af0f71b2a15dcd6333";
 
 
@@ -24,7 +25,7 @@ class Forecast extends Component {
       const data = await api_call.json();
       if (city && country) {
       this.setState({
-        temperature: data.main.temp,
+        temperature: data.list.main.temp,
         city: data.name,
         country: data.sys.country,
         humidity: data.main.humidity,
@@ -48,7 +49,8 @@ class Forecast extends Component {
 render() {
   return (
     <div>
-    This is the forecast
+    temperature
+    {this.state.temperature}
     </div>
   )
 }
