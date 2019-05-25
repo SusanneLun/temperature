@@ -1,4 +1,6 @@
 import React, { Component } from "react"
+import Form from "./Form"
+import ForecastPres from "./ForecastPres"
 
 
 
@@ -25,11 +27,11 @@ class Forecast extends Component {
       const data = await api_call.json();
       if (city && country) {
       this.setState({
-        temperature: data.list.main.temp,
-        city: data.name,
-        country: data.sys.country,
-        humidity: data.main.humidity,
-        description: data.weather[0].description,
+        temperature: data.list[0].main.temp,
+        city: data.city.name,
+        country: data.city.country,
+        humidity: data.list[0].main.humidity,
+        description: data.list[0].weather.description,
         error: ""
 
       })
@@ -49,8 +51,22 @@ class Forecast extends Component {
 render() {
   return (
     <div>
-    temperature
+    <Form getWeather={this.getWeather}/>
+    <p>
+    Tomorrow's Weather For {this.state.city} In {this.state.country}
+    </p>
+    <p>
+    Temperature:
     {this.state.temperature}
+    </p>
+    <p>
+    Humidity:
+    {this.state.humidity}
+    </p>
+    <p>
+    Description:
+    {this.state.description}
+    </p>
     </div>
   )
 }
