@@ -1,6 +1,6 @@
 import React, { Component } from "react"
-import Form from "./Form"
 import ForecastPres from "./ForecastPres"
+import ForecastForm from "./ForecastForm"
 
 
 
@@ -14,6 +14,13 @@ class Forecast extends Component {
     country: undefined,
     humidity: undefined,
     description: undefined,
+    windspeed: undefined,
+    temperature1: undefined,
+    city1: undefined,
+    country1: undefined,
+    humidity1: undefined,
+    description1: undefined,
+    windspeed1: undefined,
     error: undefined
   }
 
@@ -31,7 +38,12 @@ class Forecast extends Component {
         city: data.city.name,
         country: data.city.country,
         humidity: data.list[0].main.humidity,
-        description: data.list[0].weather.description,
+        description: data.list[0].weather[0].description,
+        windspeed: data.list[0].wind.speed,
+        temperature1: data.list[1].main.temp,
+        humidity1: data.list[1].main.humidity,
+        description1: data.list[1].weather[0].description,
+        windspeed1: data.list[1].wind.speed,
         error: ""
 
       })
@@ -42,6 +54,12 @@ class Forecast extends Component {
         country: undefined,
         humidity: undefined,
         description: undefined,
+        temperature1: undefined,
+        city1: undefined,
+        country1: undefined,
+        humidity1: undefined,
+        description1: undefined,
+        windspeed1: undefined,
         error: "Please enter city and country"
 
       })
@@ -51,7 +69,7 @@ class Forecast extends Component {
 render() {
   return (
     <div>
-    <Form getWeather={this.getWeather}/>
+    <ForecastForm getWeather={this.getWeather}/>
     <p>
     Tomorrow's Weather For {this.state.city} In {this.state.country}
     </p>
@@ -66,6 +84,27 @@ render() {
     <p>
     Description:
     {this.state.description}
+    </p>
+    <p>
+    Wind Speed:
+    {this.state.windspeed}
+    </p>
+    The Day After
+    <p>
+    Temperature:
+    {this.state.temperature1}
+    </p>
+    <p>
+    Humidity:
+    {this.state.humidity1}
+    </p>
+    <p>
+    Description:
+    {this.state.description1}
+    </p>
+    <p>
+    Wind Speed:
+    {this.state.windspeed1}
     </p>
     </div>
   )
