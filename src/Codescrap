@@ -64,3 +64,36 @@ const country = e.target.elements.country.value;
 </div>
 </div>
 </div>
+
+Temperature:
+// {this.state.temperature}
+// </p>
+// <p>
+// Humidity:
+// {this.state.humidity}
+// </p>
+// <p>
+// Description:
+// {this.state.description}
+// </p>
+// <p>
+// Wind Speed:
+// {this.state.windspeed}
+// </p>
+// The Day After
+// <p>
+// Temperature:
+// {this.state.temperature1}
+// </p>
+// <p>
+// Humidity:
+// {this.state.humidity1}
+// </p>
+// <p>
+// Description:
+// {this.state.description1}
+// </p>
+// <p>
+// Wind Speed:
+// {this.state.windspeed1}
+// </p>

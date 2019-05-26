@@ -1,6 +1,7 @@
 import React, { Component } from "react"
 import ForecastPres from "./ForecastPres"
 import ForecastForm from "./ForecastForm"
+import ForecastTitle from "./ForecastTitle"
 
 
 
@@ -16,8 +17,6 @@ class Forecast extends Component {
     description: undefined,
     windspeed: undefined,
     temperature1: undefined,
-    city1: undefined,
-    country1: undefined,
     humidity1: undefined,
     description1: undefined,
     windspeed1: undefined,
@@ -53,10 +52,9 @@ class Forecast extends Component {
         city: undefined,
         country: undefined,
         humidity: undefined,
+        windspeed1: undefined,
         description: undefined,
         temperature1: undefined,
-        city1: undefined,
-        country1: undefined,
         humidity1: undefined,
         description1: undefined,
         windspeed1: undefined,
@@ -70,42 +68,20 @@ render() {
   return (
     <div>
     <ForecastForm getWeather={this.getWeather}/>
-    <p>
-    Tomorrow's Weather For {this.state.city} In {this.state.country}
-    </p>
-    <p>
-    Temperature:
-    {this.state.temperature}
-    </p>
-    <p>
-    Humidity:
-    {this.state.humidity}
-    </p>
-    <p>
-    Description:
-    {this.state.description}
-    </p>
-    <p>
-    Wind Speed:
-    {this.state.windspeed}
-    </p>
-    The Day After
-    <p>
-    Temperature:
-    {this.state.temperature1}
-    </p>
-    <p>
-    Humidity:
-    {this.state.humidity1}
-    </p>
-    <p>
-    Description:
-    {this.state.description1}
-    </p>
-    <p>
-    Wind Speed:
-    {this.state.windspeed1}
-    </p>
+    <ForecastTitle />
+    <ForecastPres
+    temperature={this.state.temperature}
+    city={this.state.city}
+    country={this.state.country}
+    humidity={this.state.humidity}
+    windspeed={this.state.windspeed}
+    description={this.state.description}
+    temperature1={this.state.temperature1}
+    humidity1={this.state.humidity1}
+    description1={this.state.description1}
+    windspeed1={this.state.windspeed1}
+    error={this.state.error}
+    />
     </div>
   )
 }
