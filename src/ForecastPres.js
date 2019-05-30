@@ -12,7 +12,7 @@ const ForecastPres = props => (
     </p>
     }
     <p>
-    Tomorrow
+    {props.day}
     </p>
     {
       props.temperature && <p className="weather__key">Temperature:
