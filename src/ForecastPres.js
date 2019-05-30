@@ -1,66 +1,79 @@
-import React from "react";
+import React, { Component } from "react";
 
 
 
-const ForecastPres = props => (
+class ForecastPres extends Component {
+
+unixTimestamp(t)
+  {
+  var dt = new Date(t*1000);
+  var hr = dt.getHours();
+  var m = "0" + dt.getMinutes();
+  var s = "0" + dt.getSeconds();
+  return dt+hr
+  }
+
+  render() {
+    return (
 
     <div className="weather__info">
     {
-      props.city && props.country &&
+      this.props.city && this.props.country &&
     <p className="weather__key"> Location:
-    <span className="weather__value"> {props.city} {props.country}</span>
+    <span className="weather__value"> {this.props.city} {this.props.country}</span>
     </p>
     }
     <p>
-    {props.day}
+    {this.unixTimestamp(this.props.tomorrow)}
     </p>
     {
-      props.temperature && <p className="weather__key">Temperature:
-      <span className="weather__value"> {props.temperature}</span>
+      this.props.temperature && <p className="weather__key">Temperature:
+      <span className="weather__value"> {this.props.temperature}</span>
       </p>
     }
     {
-      props.humidity && <p className="weather__key">Humidity:
-      <span className="weather__value"> {props.humidity}</span>
+      this.props.humidity && <p className="weather__key">Humidity:
+      <span className="weather__value"> {this.props.humidity}</span>
       </p>
     }
     {
-      props.temperature1 && <p className="weather__key">Conditions:
-      <span className="weather__value"> {props.description}</span>
+      this.props.temperature1 && <p className="weather__key">Conditions:
+      <span className="weather__value"> {this.props.description}</span>
       </p>
     }
     {
-      props.windspeed && <p className="weather__key">Windspeed:
-      <span className="weather__value"> {props.windspeed}</span>
+      this.props.windspeed && <p className="weather__key">Windspeed:
+      <span className="weather__value"> {this.props.windspeed}</span>
       </p>
     }
     <p>
-    The Day After Tomorrow
+    {this.unixTimestamp(this.props.thedayafter)}
     </p>
     {
-      props.temperature1 && <p className="weather__key">Temperature:
-      <span className="weather__value"> {props.temperature1}</span>
+      this.props.temperature1 && <p className="weather__key">Temperature:
+      <span className="weather__value"> {this.props.temperature1}</span>
       </p>
     }
     {
-      props.humidity1 && <p className="weather__key">Humidity:
-      <span className="weather__value"> {props.humidity1}</span>
+      this.props.humidity1 && <p className="weather__key">Humidity:
+      <span className="weather__value"> {this.props.humidity1}</span>
       </p>
     }
     {
-      props.description1 && <p className="weather__key">Conditions:
-      <span className="weather__value"> {props.description1}</span>
+      this.props.description1 && <p className="weather__key">Conditions:
+      <span className="weather__value"> {this.props.description1}</span>
       </p>
     }
     {
-      props.windspeed1 && <p className="weather__key">Windspeed:
-      <span className="weather__value"> {props.windspeed1}</span>
+      this.props.windspeed1 && <p className="weather__key">Windspeed:
+      <span className="weather__value"> {this.props.windspeed1}</span>
       </p>
     }
     {
-      props.error && <p className="weather__error">{props.error}</p>
+      this.props.error && <p className="weather__error">{this.props.error}</p>
     }
     </div>
-  )
+  )}
+}
 
   export default ForecastPres

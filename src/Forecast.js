@@ -65,8 +65,8 @@ class Forecast extends Component {
         humidity1: undefined,
         description1: undefined,
         windspeed1: undefined,
-        t: undefined,
-        t1: undefined,
+        date: undefined,
+        date1: undefined,
         error: "Please enter city and country"
 
       })
@@ -93,7 +93,8 @@ render() {
     <ForecastForm getWeather={this.getWeather}/>
     <ForecastTitle />
     <ForecastPres
-    day={this.unixTimestamp}
+    tomorrow={this.state.date}
+    thedayafter={this.state.date1}
     temperature={this.state.temperature}
     city={this.state.city}
     country={this.state.country}
