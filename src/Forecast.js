@@ -66,7 +66,7 @@ class Forecast extends Component {
         date: data.list[0].dt,
         country: data.city.country,
         humidity: data.list[0].main.humidity,
-        description: data.list[0].weather.description,
+        description: data.list[0].weather[0].description,
         windspeed: data.list[0].wind.speed,
         date1: data.list[1].dt,
         temperature1: data.list[1].main.temp,
@@ -81,13 +81,18 @@ class Forecast extends Component {
         humidity4: data.list[4].main.humidity,
         humidity5: data.list[5].main.humidity,
         humidity6: data.list[6].main.humidity,
-        description1: data.list[1].weather.description,
-        description2: data.list[2].weather.description,
-        description3: data.list[3].weather.description,
-        description4: data.list[4].weather.description,
-        description5: data.list[5].weather.description,
-        description6: data.list[6].weather.description,
+        description1: data.list[1].weather[0].description,
+        description2: data.list[2].weather[0].description,
+        description3: data.list[3].weather[0].description,
+        description4: data.list[4].weather[0].description,
+        description5: data.list[5].weather[0].description,
+        description6: data.list[6].weather[0].description,
         windspeed1: data.list[1].wind.speed,
+        windspeed2: data.list[2].wind.speed,
+        windspeed3: data.list[3].wind.speed,
+        windspeed4: data.list[4].wind.speed,
+        windspeed5: data.list[5].wind.speed,
+        windspeed6: data.list[6].wind.speed,
         date2: data.list[2].dt,
         date3: data.list[3].dt,
         date4: data.list[4].dt,
@@ -101,15 +106,40 @@ class Forecast extends Component {
         temperature: undefined,
         city: undefined,
         country: undefined,
-        humidity: undefined,
-        windspeed: undefined,
-        description: undefined,
-        temperature1: undefined,
-        humidity1: undefined,
-        description1: undefined,
-        windspeed1: undefined,
         date: undefined,
+        humidity: undefined,
+        description: undefined,
+        windspeed: undefined,
         date1: undefined,
+        temperature1: undefined,
+        temperature2: undefined,
+        temperature3: undefined,
+        temperature4: undefined,
+        temperature5: undefined,
+        temperature6: undefined,
+        humidity1: undefined,
+        humidity2: undefined,
+        humidity3: undefined,
+        humidity4: undefined,
+        humidity5: undefined,
+        humidity6: undefined,
+        description1: undefined,
+        description2: undefined,
+        description3: undefined,
+        description4: undefined,
+        description5: undefined,
+        description6: undefined,
+        windspeed1: undefined,
+        windspeed2: undefined,
+        windspeed3: undefined,
+        windspeed4: undefined,
+        windspeed5: undefined,
+        windspeed6: undefined,
+        date2: undefined,
+        date3: undefined,
+        date4: undefined,
+        date5: undefined,
+        date6: undefined,
         error: "Please enter city and country"
 
       })
@@ -150,9 +180,29 @@ render() {
     windspeed={this.state.windspeed}
     description={this.state.description}
     temperature1={this.state.temperature1}
+    temperature2={this.state.temperature2}
+    temperature3={this.state.temperature3}
+    temperature4={this.state.temperature4}
+    temperature5={this.state.temperature5}
+    temperature6={this.state.temperature6}
     humidity1={this.state.humidity1}
+    humidity2={this.state.humidity2}
+    humidity3={this.state.humidity3}
+    humidity4={this.state.humidity4}
+    humidity5={this.state.humidity5}
+    humidity6={this.state.humidity6}
     description1={this.state.description1}
+    description2={this.state.description2}
+    description3={this.state.description3}
+    description4={this.state.description4}
+    description5={this.state.description5}
+    description6={this.state.description6}
     windspeed1={this.state.windspeed1}
+    windspeed2={this.state.windspeed2}
+    windspeed3={this.state.windspeed3}
+    windspeed4={this.state.windspeed4}
+    windspeed5={this.state.windspeed5}
+    windspeed6={this.state.windspeed6}
     error={this.state.error}
     />
     </div>
