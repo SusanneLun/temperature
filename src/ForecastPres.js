@@ -23,9 +23,11 @@ unixTimestamp(t)
     <span className="weather__value"> {this.props.city} {this.props.country}</span>
     </p>
     }
-    <p>
-    {this.unixTimestamp(this.props.tomorrow)}
+    {
+      this.props.date && <p className="weather__key">
+      <span className="weather__value"> {this.unixTimestamp(this.props.date)} </span>
     </p>
+    }
     {
       this.props.temperature && <p className="weather__key">Temperature:
       <span className="weather__value"> {this.props.temperature}</span>
@@ -46,9 +48,136 @@ unixTimestamp(t)
       <span className="weather__value"> {this.props.windspeed}</span>
       </p>
     }
-    <p>
-    {this.unixTimestamp(this.props.thedayafter)}
+    {
+      this.props.date1 && <p className="weather__key">
+      <span className="weather__value"> {this.unixTimestamp(this.props.date1)} </span>
     </p>
+    }
+    {
+      this.props.temperature1 && <p className="weather__key">Temperature:
+      <span className="weather__value"> {this.props.temperature1}</span>
+      </p>
+    }
+    {
+      this.props.humidity1 && <p className="weather__key">Humidity:
+      <span className="weather__value"> {this.props.humidity1}</span>
+      </p>
+    }
+    {
+      this.props.description1 && <p className="weather__key">Conditions:
+      <span className="weather__value"> {this.props.description1}</span>
+      </p>
+    }
+    {
+      this.props.windspeed1 && <p className="weather__key">Windspeed:
+      <span className="weather__value"> {this.props.windspeed1}</span>
+      </p>
+    }
+    {
+      this.props.date2 && <p className="weather__key">
+      <span className="weather__value"> {this.unixTimestamp(this.props.date2)} </span>
+    </p>
+    }
+    {
+      this.props.temperature1 && <p className="weather__key">Temperature:
+      <span className="weather__value"> {this.props.temperature1}</span>
+      </p>
+    }
+    {
+      this.props.humidity1 && <p className="weather__key">Humidity:
+      <span className="weather__value"> {this.props.humidity1}</span>
+      </p>
+    }
+    {
+      this.props.description1 && <p className="weather__key">Conditions:
+      <span className="weather__value"> {this.props.description1}</span>
+      </p>
+    }
+    {
+      this.props.windspeed1 && <p className="weather__key">Windspeed:
+      <span className="weather__value"> {this.props.windspeed1}</span>
+      </p>
+    }
+    {
+      this.props.date3 && <p className="weather__key">
+      <span className="weather__value"> {this.unixTimestamp(this.props.date3)} </span>
+    </p>
+    }
+    {
+      this.props.temperature1 && <p className="weather__key">Temperature:
+      <span className="weather__value"> {this.props.temperature1}</span>
+      </p>
+    }
+    {
+      this.props.humidity1 && <p className="weather__key">Humidity:
+      <span className="weather__value"> {this.props.humidity1}</span>
+      </p>
+    }
+    {
+      this.props.description1 && <p className="weather__key">Conditions:
+      <span className="weather__value"> {this.props.description1}</span>
+      </p>
+    }
+    {
+      this.props.windspeed1 && <p className="weather__key">Windspeed:
+      <span className="weather__value"> {this.props.windspeed1}</span>
+      </p>
+    }
+    {
+      this.props.date1 && <p className="weather__key">
+      <span className="weather__value"> {this.unixTimestamp(this.props.date1)} </span>
+    </p>
+    }
+    {
+      this.props.temperature1 && <p className="weather__key">Temperature:
+      <span className="weather__value"> {this.props.temperature1}</span>
+      </p>
+    }
+    {
+      this.props.humidity1 && <p className="weather__key">Humidity:
+      <span className="weather__value"> {this.props.humidity1}</span>
+      </p>
+    }
+    {
+      this.props.description1 && <p className="weather__key">Conditions:
+      <span className="weather__value"> {this.props.description1}</span>
+      </p>
+    }
+    {
+      this.props.windspeed1 && <p className="weather__key">Windspeed:
+      <span className="weather__value"> {this.props.windspeed1}</span>
+      </p>
+    }
+    {
+      this.props.date1 && <p className="weather__key">
+      <span className="weather__value"> {this.unixTimestamp(this.props.date1)} </span>
+    </p>
+    }
+    {
+      this.props.temperature1 && <p className="weather__key">Temperature:
+      <span className="weather__value"> {this.props.temperature1}</span>
+      </p>
+    }
+    {
+      this.props.humidity1 && <p className="weather__key">Humidity:
+      <span className="weather__value"> {this.props.humidity1}</span>
+      </p>
+    }
+    {
+      this.props.description1 && <p className="weather__key">Conditions:
+      <span className="weather__value"> {this.props.description1}</span>
+      </p>
+    }
+    {
+      this.props.windspeed1 && <p className="weather__key">Windspeed:
+      <span className="weather__value"> {this.props.windspeed1}</span>
+      </p>
+    }
+    {
+      this.props.date1 && <p className="weather__key">
+      <span className="weather__value"> {this.unixTimestamp(this.props.date1)} </span>
+    </p>
+    }
     {
       this.props.temperature1 && <p className="weather__key">Temperature:
       <span className="weather__value"> {this.props.temperature1}</span>
