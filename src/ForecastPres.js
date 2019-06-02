@@ -39,7 +39,7 @@ unixTimestamp(t)
       </p>
     }
     {
-      this.props.temperature1 && <p className="weather__key">Conditions:
+      this.props.description && <p className="weather__key">Conditions:
       <span className="weather__value"> {this.props.description}</span>
       </p>
     }

@@ -55,7 +55,7 @@ getWeather =  async (e) => {
       <div>
 
         <div className="main">
-      <div className="container">
+        <div classNme="container">
         <div className="row">
           <div className="col-xs-5 title-container">
             <Titles />

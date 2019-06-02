@@ -163,8 +163,14 @@ render() {
 
   return (
     <div>
+      <div className="main">
+      <div classNme="container">
+      <div className="row">
+      <div className="col-xs-5 title-container">
+        <ForecastTitle />
+    </div>
+    <div className="col-xs-7 form-container">
     <ForecastForm getWeather={this.getWeather}/>
-    <ForecastTitle />
     <ForecastPres
     date={this.state.date}
     date1={this.state.date1}
@@ -206,6 +212,11 @@ render() {
     error={this.state.error}
     />
     </div>
+    </div>
+    </div>
+    </div>
+    </div>
+
   )
 }
 }
