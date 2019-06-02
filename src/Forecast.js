@@ -169,7 +169,7 @@ render() {
       <div className="col-xs-5 title-container">
         <ForecastTitle />
     </div>
-    <div className="col-xs-7 form-container">
+    <div className="col-xs-7 form-container2">
     <ForecastForm getWeather={this.getWeather}/>
     <ForecastPres
     date={this.state.date}
