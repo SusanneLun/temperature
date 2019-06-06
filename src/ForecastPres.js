@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 
-
+let days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
 
 class ForecastPres extends Component {
 
@@ -10,10 +10,12 @@ unixTimestamp(t)
   var hr = dt.getHours();
   var m = "0" + dt.getMinutes();
   var s = "0" + dt.getSeconds();
-  return dt+hr
+  return days[dt.getDay()] + ' ' + hr + ':' + m
   }
 
   render() {
+  let days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
+
     return (
 
     <div className="forecast__info">
