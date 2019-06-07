@@ -1,3 +1,9 @@
+This is a weather app built in React using https://openweathermap.org/ free API retrieving current weather and 24 hours forecast for any city and country in the world. Apparently there is a limitation of the number of API calls you can make but so far this has not been an issue.
+
+To use the free data, you will have to register for an API key on the site.
+
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
