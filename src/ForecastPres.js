@@ -19,12 +19,15 @@ unixTimestamp(t)
     return (
 
     <div className="forecast__info">
+
     {
       this.props.city && this.props.country &&
     <p className="forecast__key"> Location:
     <span className="forecast__value"> {this.props.city} {this.props.country}</span>
     </p>
     }
+    <section className="card">
+    <div className="card--content">
     {
       this.props.date && <p className="forecast__key">
       <span className="forecast__value"> {this.unixTimestamp(this.props.date)} </span>
@@ -50,6 +53,8 @@ unixTimestamp(t)
       <span className="forecast__value"> {this.props.windspeed}</span>
       </p>
     }
+    </div>
+    <div className="card--content">
     {
       this.props.date1 && <p className="forecast__key">
       <span className="forecast__value"> {this.unixTimestamp(this.props.date1)} </span>
@@ -75,6 +80,8 @@ unixTimestamp(t)
       <span className="forecast__value"> {this.props.windspeed1}</span>
       </p>
     }
+    </div>
+    <div className="card--content">
     {
       this.props.date2 && <p className="forecast__key">
       <span className="forecast__value"> {this.unixTimestamp(this.props.date2)} </span>
@@ -100,6 +107,8 @@ unixTimestamp(t)
       <span className="forecast__value"> {this.props.windspeed2}</span>
       </p>
     }
+    </div>
+    <div className="card--content">
     {
       this.props.date3 && <p className="forecast__key">
       <span className="forecast__value"> {this.unixTimestamp(this.props.date3)} </span>
@@ -125,6 +134,8 @@ unixTimestamp(t)
       <span className="forecast__value"> {this.props.windspeed3}</span>
       </p>
     }
+    </div>
+    <div className="card--content">
     {
       this.props.date4 && <p className="forecast__key">
       <span className="forecast__value"> {this.unixTimestamp(this.props.date4)} </span>
@@ -150,6 +161,8 @@ unixTimestamp(t)
       <span className="forecast__value"> {this.props.windspeed4}</span>
       </p>
     }
+    </div>
+    <div className="card--content">
     {
       this.props.date5 && <p className="forecast__key">
       <span className="forecast__value"> {this.unixTimestamp(this.props.date5)} </span>
@@ -175,6 +188,8 @@ unixTimestamp(t)
       <span className="forecast__value"> {this.props.windspeed5}</span>
       </p>
     }
+    </div>
+    <div className="card--content">
     {
       this.props.date6 && <p className="forecast__key">
       <span className="forecast__value"> {this.unixTimestamp(this.props.date6)} </span>
@@ -200,6 +215,8 @@ unixTimestamp(t)
       <span className="forecast__value"> {this.props.windspeed6}</span>
       </p>
     }
+    </div>
+    </section>
     {
       this.props.error && <p className="forecast__error">{this.props.error}</p>
     }

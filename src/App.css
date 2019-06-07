@@ -102,7 +102,7 @@ button:active {
   letter-spacing: 2px;
 }
 .forecast__info {
-  width: 30%;
+  width: 100%;
   font-size: 14px;
   font-weight: 100;
   letter-spacing: 1px;
@@ -138,4 +138,13 @@ button:active {
   font-size: 20px;
   letter-spacing: 1px;
   font-weight: 200;
+}
+.card {
+  display: flex;
+}
+.card--content {
+  background-color: #5b5959;
+  min-width: 200px;
+  padding: 5px;
+  margin: 5px;
 }
