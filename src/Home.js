@@ -15,6 +15,7 @@ class Home extends Component {
     country: undefined,
     humidity: undefined,
     description: undefined,
+    windspeed: undefined,
     error: undefined
   }
 
@@ -33,6 +34,7 @@ getWeather =  async (e) => {
       country: data.sys.country,
       humidity: data.main.humidity,
       description: data.weather[0].description,
+      windspeed: data.wind.speed,
       error: ""
 
     })
@@ -68,6 +70,7 @@ getWeather =  async (e) => {
           country={this.state.country}
           humidity={this.state.humidity}
           description={this.state.description}
+          windspeed={this.state.windspeed}
           error={this.state.error}
         />
       </div>

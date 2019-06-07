@@ -9,7 +9,7 @@ import { NavLink } from 'react-router-dom';
     height: '80px',
     padding: '12px',
     margin: '0 6px 6px',
-    background: 'blue',
+    background: '#f16051',
     textDecoration: 'none',
     color: 'white',
   }
@@ -25,24 +25,17 @@ import { NavLink } from 'react-router-dom';
         style={link}
         /* add prop for activeStyle */
         activeStyle={{
-          background: 'blue'
+          background: '#f16051'
         }}
-      >Home</NavLink>
-      <NavLink
-      to="/myarea"
-      exact
-      style={link}
-      activeStyle={{
-        background: 'blue'
-      }}>My Area</NavLink>
+      >Weather Now</NavLink>
       <NavLink
         to="/forecast"
         exact
         style={link}
         activeStyle={{
-          background: 'blue'
+          background: '#f16051'
         }}
-      >Forecast</NavLink>
+      >Forecast 24h</NavLink>
     </div>;
 
 

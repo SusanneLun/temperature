@@ -49,7 +49,7 @@ unixTimestamp(t)
     }
     {
       this.props.windspeed && <p className="forecast__key">Windspeed:
-      <span className="forecast__value"> {this.props.windspeed} mph</span>
+      <span className="forecast__value"> {this.props.windspeed} mps</span>
       </p>
     }
     </div>
@@ -76,7 +76,7 @@ unixTimestamp(t)
     }
     {
       this.props.windspeed1 && <p className="forecast__key">Windspeed:
-      <span className="forecast__value"> {this.props.windspeed1} mph</span>
+      <span className="forecast__value"> {this.props.windspeed1} mps</span>
       </p>
     }
     </div>
@@ -103,7 +103,7 @@ unixTimestamp(t)
     }
     {
       this.props.windspeed2 && <p className="forecast__key">Windspeed:
-      <span className="forecast__value"> {this.props.windspeed2} mph</span>
+      <span className="forecast__value"> {this.props.windspeed2} mps</span>
       </p>
     }
     </div>
@@ -130,7 +130,7 @@ unixTimestamp(t)
     }
     {
       this.props.windspeed3 && <p className="forecast__key">Windspeed:
-      <span className="forecast__value"> {this.props.windspeed3} mph</span>
+      <span className="forecast__value"> {this.props.windspeed3} mps</span>
       </p>
     }
     </div>
@@ -157,7 +157,7 @@ unixTimestamp(t)
     }
     {
       this.props.windspeed4 && <p className="forecast__key">Windspeed:
-      <span className="forecast__value"> {this.props.windspeed4} mph</span>
+      <span className="forecast__value"> {this.props.windspeed4} mps</span>
       </p>
     }
     </div>
@@ -184,7 +184,7 @@ unixTimestamp(t)
     }
     {
       this.props.windspeed5 && <p className="forecast__key">Windspeed:
-      <span className="forecast__value"> {this.props.windspeed5} mph</span>
+      <span className="forecast__value"> {this.props.windspeed5} mps</span>
       </p>
     }
     </div>
@@ -211,7 +211,7 @@ unixTimestamp(t)
     }
     {
       this.props.windspeed6 && <p className="forecast__key">Windspeed:
-      <span className="forecast__value"> {this.props.windspeed6} mph</span>
+      <span className="forecast__value"> {this.props.windspeed6} mps</span>
       </p>
     }
     </div>
