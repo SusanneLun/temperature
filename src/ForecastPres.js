@@ -19,7 +19,6 @@ unixTimestamp(t)
     return (
 
     <div className="forecast__info">
-
     {
       this.props.city && this.props.country &&
     <p className="forecast__key"> Location:
@@ -35,12 +34,12 @@ unixTimestamp(t)
     }
     {
       this.props.temperature && <p className="forecast__key">Temperature:
-      <span className="forecast__value"> {this.props.temperature}</span>
+      <span className="forecast__value"> {this.props.temperature}°</span>
       </p>
     }
     {
       this.props.humidity && <p className="forecast__key">Humidity:
-      <span className="forecast__value"> {this.props.humidity}</span>
+      <span className="forecast__value"> {this.props.humidity}%</span>
       </p>
     }
     {
@@ -50,7 +49,7 @@ unixTimestamp(t)
     }
     {
       this.props.windspeed && <p className="forecast__key">Windspeed:
-      <span className="forecast__value"> {this.props.windspeed}</span>
+      <span className="forecast__value"> {this.props.windspeed} mph</span>
       </p>
     }
     </div>
@@ -62,12 +61,12 @@ unixTimestamp(t)
     }
     {
       this.props.temperature1 && <p className="forecast__key">Temperature:
-      <span className="forecast__value"> {this.props.temperature1}</span>
+      <span className="forecast__value"> {this.props.temperature1}°</span>
       </p>
     }
     {
       this.props.humidity1 && <p className="forecast__key">Humidity:
-      <span className="forecast__value"> {this.props.humidity1}</span>
+      <span className="forecast__value"> {this.props.humidity1}%</span>
       </p>
     }
     {
@@ -77,7 +76,7 @@ unixTimestamp(t)
     }
     {
       this.props.windspeed1 && <p className="forecast__key">Windspeed:
-      <span className="forecast__value"> {this.props.windspeed1}</span>
+      <span className="forecast__value"> {this.props.windspeed1} mph</span>
       </p>
     }
     </div>
@@ -89,12 +88,12 @@ unixTimestamp(t)
     }
     {
       this.props.temperature2 && <p className="forecast__key">Temperature:
-      <span className="forecast__value"> {this.props.temperature2}</span>
+      <span className="forecast__value"> {this.props.temperature2}°</span>
       </p>
     }
     {
       this.props.humidity2 && <p className="forecast__key">Humidity:
-      <span className="forecast__value"> {this.props.humidity2}</span>
+      <span className="forecast__value"> {this.props.humidity2}%</span>
       </p>
     }
     {
@@ -104,7 +103,7 @@ unixTimestamp(t)
     }
     {
       this.props.windspeed2 && <p className="forecast__key">Windspeed:
-      <span className="forecast__value"> {this.props.windspeed2}</span>
+      <span className="forecast__value"> {this.props.windspeed2} mph</span>
       </p>
     }
     </div>
@@ -116,12 +115,12 @@ unixTimestamp(t)
     }
     {
       this.props.temperature3 && <p className="forecast__key">Temperature:
-      <span className="forecast__value"> {this.props.temperature3}</span>
+      <span className="forecast__value"> {this.props.temperature3}°</span>
       </p>
     }
     {
       this.props.humidity3 && <p className="forecast__key">Humidity:
-      <span className="forecast__value"> {this.props.humidity3}</span>
+      <span className="forecast__value"> {this.props.humidity3}%</span>
       </p>
     }
     {
@@ -131,7 +130,7 @@ unixTimestamp(t)
     }
     {
       this.props.windspeed3 && <p className="forecast__key">Windspeed:
-      <span className="forecast__value"> {this.props.windspeed3}</span>
+      <span className="forecast__value"> {this.props.windspeed3} mph</span>
       </p>
     }
     </div>
@@ -143,12 +142,12 @@ unixTimestamp(t)
     }
     {
       this.props.temperature4 && <p className="forecast__key">Temperature:
-      <span className="forecast__value"> {this.props.temperature4}</span>
+      <span className="forecast__value"> {this.props.temperature4}°</span>
       </p>
     }
     {
       this.props.humidity4 && <p className="forecast__key">Humidity:
-      <span className="forecast__value"> {this.props.humidity4}</span>
+      <span className="forecast__value"> {this.props.humidity4}%</span>
       </p>
     }
     {
@@ -158,7 +157,7 @@ unixTimestamp(t)
     }
     {
       this.props.windspeed4 && <p className="forecast__key">Windspeed:
-      <span className="forecast__value"> {this.props.windspeed4}</span>
+      <span className="forecast__value"> {this.props.windspeed4} mph</span>
       </p>
     }
     </div>
@@ -170,12 +169,12 @@ unixTimestamp(t)
     }
     {
       this.props.temperature5 && <p className="forecast__key">Temperature:
-      <span className="forecast__value"> {this.props.temperature5}</span>
+      <span className="forecast__value"> {this.props.temperature5}°</span>
       </p>
     }
     {
       this.props.humidity5 && <p className="forecast__key">Humidity:
-      <span className="forecast__value"> {this.props.humidity5}</span>
+      <span className="forecast__value"> {this.props.humidity5}%</span>
       </p>
     }
     {
@@ -185,7 +184,7 @@ unixTimestamp(t)
     }
     {
       this.props.windspeed5 && <p className="forecast__key">Windspeed:
-      <span className="forecast__value"> {this.props.windspeed5}</span>
+      <span className="forecast__value"> {this.props.windspeed5} mph</span>
       </p>
     }
     </div>
@@ -197,12 +196,12 @@ unixTimestamp(t)
     }
     {
       this.props.temperature6 && <p className="forecast__key">Temperature:
-      <span className="forecast__value"> {this.props.temperature6}</span>
+      <span className="forecast__value"> {this.props.temperature6}°</span>
       </p>
     }
     {
       this.props.humidity6 && <p className="forecast__key">Humidity:
-      <span className="forecast__value"> {this.props.humidity6}</span>
+      <span className="forecast__value"> {this.props.humidity6}%</span>
       </p>
     }
     {
@@ -212,7 +211,7 @@ unixTimestamp(t)
     }
     {
       this.props.windspeed6 && <p className="forecast__key">Windspeed:
-      <span className="forecast__value"> {this.props.windspeed6}</span>
+      <span className="forecast__value"> {this.props.windspeed6} mph</span>
       </p>
     }
     </div>

@@ -139,12 +139,16 @@ button:active {
   letter-spacing: 1px;
   font-weight: 200;
 }
+.card::-webkit-scrollbar {
+  display: none;
+}
 .card {
   display: flex;
+  overflow-x: auto;
 }
 .card--content {
-  background-color: #5b5959;
+  background-color: #605d5d;
   min-width: 200px;
-  padding: 5px;
+  padding: 7px;
   margin: 5px;
 }
