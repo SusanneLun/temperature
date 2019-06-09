@@ -5,10 +5,12 @@
   "homepage": "https://github.com/SusanneLun/temperature",
   "dependencies": {
     "gh-pages": "^2.0.1",
+    "jest-dom": "^3.5.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-router-dom": "^5.0.0",
     "react-scripts": "3.0.0",
+    "react-testing-library": "^8.0.1",
     "semantic-ui": "^2.4.2",
     "typescript": "^3.5.1"
   },
